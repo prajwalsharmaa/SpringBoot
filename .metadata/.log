@@ -64,3 +64,220 @@ END
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-09-02 21:40:31.288
 !MESSAGE Started org.springframework.tooling.boot.ls LS process 14200
+
+!ENTRY org.eclipse.jface 2 0 2025-09-02 21:57:51.723
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-02 21:57:51.723
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2025-09-03 12:38:35.418 -----------------------------------------------
+eclipse.buildId=4.34.0.202502032007
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-03 12:38:38.076
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-03 12:38:45.962
+!MESSAGE Logback config file: E:\WorkSpace\SpringBoot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-09-03 12:38:46.398
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-03 12:38:46.398
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-03 12:38:46.690
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-03 12:38:46.690
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-09-03 12:38:50.235
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.28.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=E:/WorkSpace/SpringBoot/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1756882430235
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\sts-4.28.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.60.0.202502031607\servers\spring-boot-language-server\spring-boot-language-server-1.60.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-03 12:38:50.235
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-09-03 12:38:50.251
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 17212
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-03 12:38:51.483
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-03 12:38:51.483
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-03 12:38:51.486
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-09-03 12:38:51.516
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ps351'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 0 2025-09-03 14:01:40.141
+!MESSAGE OperationCanceledException computing hover information in ChatController.java at offset 1542
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:239)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:225)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:186)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:78)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:127)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:1142)
+	at org.eclipse.jdt.internal.core.BinaryType.getFlags(BinaryType.java:357)
+	at org.eclipse.jdt.internal.core.SearchableEnvironmentRequestor.acceptType(SearchableEnvironmentRequestor.java:127)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1510)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1442)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.NameLookup.findAllTypes(NameLookup.java:422)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1418)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:964)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:766)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:592)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:571)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:1048)
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:167)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:471)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:461)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:122)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:428)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:399)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 44 :
+-----
+		}
+		return "<h3> Available Users:</h3>" + "<ul>" + userList + "</ul>";
+	
+	}
+	@GetMapping("/chat/room/{username}")
+	public String showChatRoomPage(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+		// TODO: eliminate the need for providing receiver's username all the time
+		// Todo: show chat room with single user 
+		// Todo; 
+		// check if user| is logged in
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:150)
+		at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:124)
+		... 6 more
+!SESSION 2025-09-04 12:38:06.305 -----------------------------------------------
+eclipse.buildId=4.34.0.202502032007
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-04 12:38:08.564
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-04 12:38:13.016
+!MESSAGE Logback config file: E:\WorkSpace\SpringBoot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-09-04 12:38:13.492
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-04 12:38:13.492
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-04 12:38:13.761
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-04 12:38:13.761
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-09-04 12:38:17.613
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.28.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=E:/WorkSpace/SpringBoot/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1756968797613
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\sts-4.28.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.60.0.202502031607\servers\spring-boot-language-server\spring-boot-language-server-1.60.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-04 12:38:17.614
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-09-04 12:38:17.629
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 17588
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-04 12:38:18.958
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-04 12:38:18.959
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-04 12:38:18.962
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-09-04 12:38:19.045
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ps351'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 2 0 2025-09-04 13:19:21.480
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-04 13:19:21.480
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
